@@ -13,7 +13,7 @@
 </head>
 <body>
     <main class="backColor">
-        <header>
+        <section class="header">
             <div class="container">
                 <nav>
                     <div class="logo">
@@ -30,7 +30,7 @@
                     </div> 
                 </nav>                
             </div>
-        </header>
+        </section>
 
         <section class="banner">
             <div class="container">

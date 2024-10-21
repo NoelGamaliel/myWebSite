@@ -46,14 +46,14 @@
                     <td>1</td>
                     <td>Jean Claude</td>
                     <td>16</td>
-                    <td>16</td>
+                    <td>17</td>
                 </tr>
 
                 <tr>
                     <td>2</td>
                     <td>Ezéckiel</td>
                     <td>24</td>
-                    <td>16</td>
+                    <td>36</td>
                 </tr>
             </table>
         </div>

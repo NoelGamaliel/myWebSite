@@ -11,29 +11,33 @@
     font-size: 1.0rem;
     list-style-type: none;
     text-decoration: none;
+    z-index: 0;
 }
 
-/**
 .backColor {
-     background: #f2f3f4; 
+    background: #fafafa; 
 }
-**/
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 0px auto;
 }
 
-header {
+.header {
     background: #042f5a;
-    height: 70px;
+    padding: 10px 0px;
 }
 
-nav {
+/**
+.header .container {
+    border: 1px dashed #ccc;
+}
+**/
+.container nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0
+    padding: 10px 0px;
 }
 
 nav ul {
@@ -47,8 +51,19 @@ nav ul li {
 
 /** Banners ************/
 .banner {
-    background: #f8f9f9;
+    background-image:linear-gradient(160 '') url('');
 }
+
+.banner .container {
+    border: 1px dashed #ccc;
+}
+
+.banner .container .banner-content h1 {
+    padding: 20px 0;
+}
+
+
+
 
 /** controlForm *********/
 .controlForm {
