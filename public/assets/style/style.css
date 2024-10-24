@@ -52,6 +52,8 @@ nav ul li {
 /** Banners ************/
 .banner {
     background-image:linear-gradient(160 '') url('');
+    height: 50vh;
+    display: flex;
 }
 
 .banner .container {
@@ -62,8 +64,17 @@ nav ul li {
     padding: 20px 0;
 }
 
+/** AboutContent **/
+.AboutContent {
+    border: 1px dashed #ccc;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2em;
+}
 
-
+.AboutContent-2 img {
+    margin: 0px auto;
+}
 
 /** controlForm *********/
 .controlForm {

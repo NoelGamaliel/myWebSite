@@ -23,10 +23,9 @@
                         <li><a href="http://">Home</a></li>
                         <li><a href="http://">About</a></li>
                         <li><a href="http://">Services</a></li>
-                        <li><a href="http://">Contact</a></li>
                     </ul>
                     <div class="btn-don">
-                        <a href="http://">Don</a>
+                        <a href="http://">Contact</a>
                     </div> 
                 </nav>                
             </div>
@@ -39,6 +38,21 @@
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in expedita eum error maxime? Nihil, fugiat? Nostrum debitis incidunt earum nihil eius quisquam necessitatibus mollitia?</p>
                 </div>                
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h1>About my WebSite</h1>
+
+                <div class="AboutContent">
+                    <div class="AboutContent-1">
+                        First
+                    </div>
+                    <div class="AboutContent-2">
+                        <img src="./public/assets/img/engineering.jpg" alt="123">
+                    </div> 
+                </div>    
             </div>
         </section>
 
