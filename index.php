@@ -17,7 +17,7 @@
             <div class="container">
                 <nav>
                     <div class="logo">
-                        <a href="http://">Logo</a>
+                        <a href="http://">Ndtechnology</a>
                     </div>
                     <ul>
                         <li><a href="http://">Home</a></li>
@@ -34,7 +34,11 @@
         <section class="banner">
             <div class="container">
                 <div class="banner-content">
-                    <h1>Welcome to my WebSite</h1>
+                    <div>
+                        <p class="bannerNotice actived" id="actived">Ndtechnology the best for your business....</p>
+                    </div>
+
+                    <h1>We are happy to see you, let us know your needed !</h1>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in expedita eum error maxime? Nihil, fugiat? Nostrum debitis incidunt earum nihil eius quisquam necessitatibus mollitia?</p>
                 </div>                
@@ -47,7 +51,8 @@
 
                 <div class="AboutContent">
                     <div class="AboutContent-1">
-                        First
+                        <h1>About Us</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id lectus et justo viverra ultricies. Sed et ex vel neque pharetra malesuada. Donec faucibus dui vel ipsum tincidunt, ac posuere nisi laoreet. Maecenas ut ipsum at lectus ultricies tincidunt. Sed vel libero nec neque ultricies mattis.</p>
                     </div>
                     <div class="AboutContent-2">
                         <img src="./public/assets/img/engineering.jpg" alt="123">

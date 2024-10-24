@@ -24,8 +24,9 @@
 }
 
 .header {
-    background: #042f5a;
+    background: #ffffff;
     padding: 10px 0px;
+    box-shadow: -8px 9px 15px -9px rgba(0,0,0,0.1);
 }
 
 /**
@@ -44,8 +45,22 @@ nav ul {
     display: flex;
     margin: 0px auto;
 }
+
 nav ul li {
     padding: 0px 20px;
+}
+
+nav ul li a {
+    color: #00805d;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    padding: 10px 0;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    transform: translateY(-2px);
+    border-bottom: 3px solid #00805d;
 }
 
 
@@ -60,20 +75,40 @@ nav ul li {
     border: 1px dashed #ccc;
 }
 
-.banner .container .banner-content h1 {
-    padding: 20px 0;
+.banner-content .bannerNotice {
+    padding: 25px 0px;
+    text-align: center;
+    color: #00805d;
 }
+
+.banner .container .banner-content h1 {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#actived::before {
+    position: relative;
+    border-bottom: 3px solid #00805d;
+    height: 10px;
+    text-align: center;
+    width: 50px;
+}
+
 
 /** AboutContent **/
 .AboutContent {
     border: 1px dashed #ccc;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2em;
 }
 
 .AboutContent-2 img {
     margin: 0px auto;
+    overflow: hidden;
+    width: 100%;
 }
 
 /** controlForm *********/
