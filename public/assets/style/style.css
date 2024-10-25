@@ -11,11 +11,12 @@
     font-size: 1.0rem;
     list-style-type: none;
     text-decoration: none;
-    z-index: 0;
 }
 
 .backColor {
-    background: #fafafa; 
+    height: 120vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .container {
@@ -27,6 +28,9 @@
     background: #ffffff;
     padding: 10px 0px;
     box-shadow: -8px 9px 15px -9px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 /**
@@ -66,36 +70,52 @@ nav ul li a:hover {
 
 /** Banners ************/
 .banner {
-    background-image:linear-gradient(160 '') url('');
-    height: 50vh;
+    position: relative;
+    height: 75vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./public/assets/img/background.jpg"), linear-gradient(125deg, #00000096, #230100);
+    background-size: cover;
+    background-position: center;
 }
 
 .banner .container {
-    border: 1px dashed #ccc;
+    border: 0px dashed #ccc;
 }
 
 .banner-content .bannerNotice {
-    padding: 25px 0px;
+    padding: 30px 0px;
     text-align: center;
     color: #00805d;
 }
 
-.banner .container .banner-content h1 {
-    padding: 10px 0;
+.banner-content h1 {
+    padding: 0px 0;
     font-weight: bold;
     font-size: 2.5em;
     text-align: center;
+    color: #ffffff;
 }
 
-#actived::before {
-    position: relative;
-    border-bottom: 3px solid #00805d;
-    height: 10px;
+.banner-content p {
     text-align: center;
-    width: 50px;
+    color: #ffffff;
 }
 
+.btnBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnBanner a {
+    padding: 10px 30px;
+    border: 1px solid #ffffff;
+    color: #000000;
+    transition: all 0.5s ease;
+    color: #ffffff;
+}
 
 /** AboutContent **/
 .AboutContent {
@@ -103,6 +123,13 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
+}
+
+
+.AboutContent .AboutContent-1 h1 {
+    padding: 50px 0;
+    font-weight: bold;
+    font-size: 2.5em;
 }
 
 .AboutContent-2 img {
