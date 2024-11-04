@@ -134,26 +134,49 @@ nav ul li a:hover {
 }
 
 /** AboutContent **/
-.AboutContent {
+.about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+    grid-gap: 0px;  
 }
 
-
-.AboutContent .AboutContent-1 h1 {
-    padding: 50px 0;
-    font-weight: bold;
-    font-size: 2.5em;
-}
-
-.AboutContent-2 img {
-    margin: 0px auto;
-    overflow: hidden;
+.contentAbout img {
     width: 100%;
-    border-radius: 15px 15px 15px 15px;
+    height: auto;
     object-fit: cover;
-    
+}
+.contentAbout h2 {
+    padding: 50px 0px;
+    font-weight: bold;
+    font-size: 2em;
+}
+.contentAbout p {
+    text-align: justify;
+}
+
+
+/** Services **/
+.Services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+}
+
+.contentServices img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contentServices h2 {
+    padding: 50px 0px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.contentServices p {
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
 /** controlForm *********/
@@ -168,3 +191,4 @@ nav ul li a:hover {
     background-color: antiquewhite;
     border: 1px solid #454545;
 }
+

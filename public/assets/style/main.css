@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.blockContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.heroSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.items .blockOver {
+    position: absolute;
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+.items h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.items img {
+    padding: 25px 0;
+    width: 100%;
+    object-fit: cover;
+}
