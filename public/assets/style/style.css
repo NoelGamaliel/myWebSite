@@ -100,7 +100,7 @@ nav ul li a:hover {
 .banner-content .bannerNotice {
     padding: 10px 0px;
     text-align: center;
-    color: #ffd500;
+    color: #f8cf00;
     font-weight: bold;
 }
 
@@ -177,6 +177,19 @@ nav ul li a:hover {
 .contentServices p {
     text-align: justify;
     margin-bottom: 20px;
+}
+
+/** serviceList **/
+.serviceList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+.serviceList1 a {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    color: #000000; 
+    border-radius:  20% 20%;
 }
 
 /** controlForm *********/
