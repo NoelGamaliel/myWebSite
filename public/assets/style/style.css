@@ -17,12 +17,6 @@
     position: relative;
 }
 
-/**
-.container-fluid {
-
-}
-**/
-
 .container {
     width: 80%;
     margin: 0px auto;
@@ -37,33 +31,33 @@
     z-index: 9999;
 }
 
-.container nav {
+.header .container nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
 }
 
-.logo a {
+.header .container .logo a {
     color: #000000;
     font-weight: bold;
 }
 
-nav ul {
+.header .container nav ul {
     display: flex;
     margin: 0px auto;
 }
 
-nav ul li {
+.header .container nav ul li {
     padding: 0px 20px;
 }
 
-nav ul li a {
+.header .container nav ul li a {
     color: #231f1b;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+.header .container nav ul li a:hover {
     padding: 10px 0;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
@@ -88,17 +82,17 @@ nav ul li a:hover {
 /** Banners ************/
 .banner {
     position: relative;
-    height: 75vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./public/assets/img/background.jpg"), linear-gradient(125deg, #2c1c00, #230100);
+    background-image: linear-gradient(to bottom, rgba(1, 4, 23, 0.79), rgb(1, 1, 5)), url("/public/assets/img/engineering.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .banner-content .bannerNotice {
-    padding: 10px 0px;
+    padding: 0px 0px;
     text-align: center;
     color: #f8cf00;
     font-weight: bold;
