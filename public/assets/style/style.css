@@ -18,12 +18,12 @@
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0px auto;
 }
 
-.header {
-    background: #ffffff;
+#header {
+    background: #000000;
     padding: 10px 0px;
     box-shadow: -8px 9px 15px -9px rgba(0,0,0,0.1);
     position: fixed;
@@ -31,41 +31,42 @@
     z-index: 9999;
 }
 
-.header .container nav {
+#header .container .logo a {
+    color: #f8cf00;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#header .container nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 15px 0px;
 }
 
-.header .container .logo a {
-    color: #000000;
-    font-weight: bold;
-}
-
-.header .container nav ul {
+#header .container nav ul {
     display: flex;
-    margin: 0px auto;
+    margin: 1px auto;
 }
 
-.header .container nav ul li {
+#header .container nav ul li {
     padding: 0px 20px;
 }
 
-.header .container nav ul li a {
-    color: #231f1b;
+#header .container nav ul li a {
+    color: #ffffff;
     text-decoration: none;
+    transition: 0.5s ease-in-out;
 }
 
-.header .container nav ul li a:hover {
+#header .container nav ul li a:hover {
     padding: 10px 0;
     font-weight: 500;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.6s ease-in-out;
     transform: translateY(-2px);
     border-bottom: 3px solid #ffd500;
 }
 
-.btn-don {
+.btnContact {
     background: #FFD500;
     color: #000000;
     padding: 10px 20px;
@@ -74,15 +75,15 @@
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
-.btn-don a {
+.btnContact a {
     color: #000000;
     text-decoration: none;
 }
 
 /** Banners ************/
-.banner {
+#banner {
     position: relative;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,14 +92,14 @@
     background-position: center;
 }
 
-.banner-content .bannerNotice {
-    padding: 0px 0px;
+#banner .bannerNotice {
+    padding: 10px 0px;
     text-align: center;
     color: #f8cf00;
     font-weight: bold;
 }
 
-.banner-content h1 {
+#banner h1 {
     padding: 0px 0;
     font-weight: bold;
     font-size: 2.5em;
@@ -106,7 +107,7 @@
     color: #ffffff;
 }
 
-.banner-content p {
+#banner p {
     text-align: center;
     color: #ffffff;
 }
@@ -115,6 +116,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 
 .btnBanner a {
@@ -128,62 +130,38 @@
 }
 
 /** AboutContent **/
-.about {
+#about .aboutCarousel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px;  
+    grid-gap: 10px; 
 }
 
-.contentAbout img {
+#about h2 {
+    padding: 50px 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.aboutCarousel-Items h3 {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #000000;
+}
+
+.aboutCarousel-Picture img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 5px;
 }
-.contentAbout h2 {
-    padding: 50px 0px;
-    font-weight: bold;
-    font-size: 2em;
-}
-.contentAbout p {
-    text-align: justify;
-}
-
 
 /** Services **/
 .Services {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
-}
-
-.contentServices img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.contentServices h2 {
-    padding: 50px 0px;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-.contentServices p {
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-/** serviceList **/
-.serviceList {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-}
-.serviceList1 a {
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    color: #000000; 
-    border-radius:  20% 20%;
 }
 
 /** controlForm *********/
