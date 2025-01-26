@@ -4,21 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- links for css files -->
     <link rel="stylesheet" href="/public/assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
     <title>Document</title>
 </head>
 <body>
     <main>
-        <div class="container">
-            <h1>Contact Form</h1>
+        <!-- banner secion for contact page -->
+        <div id="bannerContact" class="bannerContact">
+            <div class="container">
+                <a href="index.html"><i class="fa-thin fa-less-than"></i>  Go Back to the home page</a>
+                <br>
+                <h1>We're happy to read your message</h1>                
+            </div>
+        </div>
 
+        <div class="container">
             <div class="blockContact">
-                <div>
+                <div class="blockContactItems">
+                    
+                    <h1>Contact Form</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione amet reiciendis harum, alias error ullam quis! Maiores iusto numquam repellendus. Aliquid enim accusantium pariatur natus molestiae quibusdam adipisci inventore!
+                        If you have any questions or need assistance, please don't hesitate to contact us. We'll be happy to help you.
                     </p>
+                    <div class="socialMedia">
+                        <a href="#"><i class="fa-solid fa-phone"></i>  +1 780 246 9535</a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i>  Ndtechnology Inc</a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i>  contact@ndtechnology.tech</a>
+                    </div>
                 </div>
-                <div>
+                <div class="blockContactItems">
                     <form id="formContainer" action="" method="post">
                         <div class="formContent">
                             <div class="block0"> 
@@ -43,13 +60,13 @@
                             <div class="block2"> 
 
                                 <label for="text">Text:</label>
-                                <textarea name="text" id="text" cols="30"></textarea>                       
+                                <textarea name="text" id="text" rows="5" cols="50"></textarea>                       
 
                             </div>
 
                             <div class="block3"> 
 
-                                <input type="submit" id="name" name="submit" required>                        
+                                <input type="submit" id="name" name="send" value="send" required>                        
                             
                             </div>
                         </div>
