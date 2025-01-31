@@ -67,20 +67,20 @@
     border-bottom: 3px solid #ffd500;
 }
 
-.btnContact {
+.btnContact a {
     background: #FFD500;
     color: #000000;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
+    animation: alternate;
 }
-.btnContact a {
-    color: #000000;
-    text-decoration: none;
+.btnContact a:hover {
+    background: #ffffff;
+    color: #ffd500;
 }
-
 /** Banners ************/
 #banner {
     position: relative;
@@ -134,35 +134,53 @@
 #about .aboutCarousel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px; 
+    grid-gap: 10px;
+    margin-bottom: 20px; 
 }
 
 #about h2 {
-    padding: 50px 0;
+    padding: 35px 0;
     font-weight: bold;
     font-size: 1.5em;
     color: #000000;
 }
 
 .aboutCarousel-Items h3 {
-    padding: 10px 0;
+    padding: 50px 0;
     font-weight: bold;
     font-size: 1.3em;
     color: #000000;
+}
+
+.aboutCarousel-Items i {
+    color: #ffd500;
+    font-size: 1.1em;
 }
 
 .aboutCarousel-Picture img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /** Services **/
-.Services {
+#services {
+    padding: 35px 0;
+    background: #f5f5f6;
+}
+
+#services .serviceContent {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+.servicesDescription {
+    border: 1px solid #ccc;
+    padding: 20px 0;
+    background: #fff;
 }
 
 /** controlForm *********/
@@ -323,11 +341,59 @@
     display: inline-block;
     margin: 0 480px;
     margin-bottom: 20px;
-    color: #ffffff;
-    border: 1px solid #ccc;
+    color: #ffd500;
+    border: 1px solid #fff;
+    background: #000000;
     padding: 2px 9px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 1.5s ease-in-out;
 }
+
+.bannerContact a:hover {
+    color: #fff;
+    border: 1px solid #ffd500;
+}
+
 .bannerContact i {
     color: #ffd500;
+}
+
+/******** Accompagnemement *******/
+#accompProject {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #ffd500, #FFD500), url("/public/assets/img/accomplishment.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.accompContent {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.accompContent h2{
+    color: #000000;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.accompContent p {
+    margin-bottom: 30px;
+}
+
+.btnAccomp a {
+    display: inline-block;
+    color: #ffd500;
+    background: #000000;
+    font-weight: bold;
+    padding: 10px 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1.5s ease-in-out;
 }
