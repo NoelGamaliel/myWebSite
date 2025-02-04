@@ -172,16 +172,35 @@
 
 #services .serviceContent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  
+        'itemServices_1 itemServices_2 itemServices_2'
+        'itemServices_1 itemServices_3 itemServices_4'
+        'itemServices_1 itemServices_3 itemServices_4';  
     grid-gap: 20px;
     padding: 20px 0px;
     margin-bottom: 30px;
+    height: 50vh                                                                                              ;
 }
-.servicesDescription {
-    border: 1px solid #ccc;
-    padding: 20px 0;
-    background: #fff;
-}
+.itemServices_1 {
+    grid-area: itemServices_1;
+    background: #ffffff;
+  }
+  
+  .itemServices_2 {
+    grid-area: itemServices_2;
+    background: #ffffff;
+  }
+  
+  .itemServices_3 {
+    grid-area: itemServices_3;
+    background: #ffffff;
+  }
+  
+  .itemServices_4 {
+    grid-area: itemServices_4;
+    background: #ffffff;
+  }
+
 
 /** controlForm *********/
 .controlForm {
@@ -258,6 +277,7 @@
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline-color: #FFD500;
 }
 
 .block1 {
@@ -274,6 +294,7 @@
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline-color: #FFD500;
 }
 
 .block2 {
@@ -288,6 +309,7 @@
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline-color: #FFD500;
 }
 
 
