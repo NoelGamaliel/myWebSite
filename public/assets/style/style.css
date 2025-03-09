@@ -24,62 +24,7 @@
 }
 
 /***** header section ***********/
-.header {
-    background: #ffffff;
-}
 
-.logo {
-    color: #ff0000;
-    font-size: 1.1em;
-    font-weight: 500;
-}
-
-.header_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    min-height: 60px;
-    overflow: hidden; 
-}
-
-nav ul {
-    display: flex;
-    column-gap: 40px;
-}
-
-nav ul li {
-    
-}
-
-nav ul li a {
-    color: #ff0000;
-    text-decoration: none;
-    transition: color 0.6s ease-in-out;
-}
-
-nav ul li a:hover {
-    padding: 10px 0;
-    font-weight: 500;
-    transition: color 0.6s ease-in-out;
-    transform: translateY(-2px);
-    border-bottom: 3px solid #ff0000;
-}
-
-.btnContact a {
-    background: #ff0000;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 1s ease-in-out;
-    animation: alternate;
-}
-.btnContact a:hover {
-    background: #000000;
-    color: #ff0000;
-}
 /** Banners ************/
 #banner {
     position: relative;
@@ -436,12 +381,32 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 600px) {
     /* Style adjustments for screens smaller than 600px */
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    /* Style adjustments for screens 600px and up */
+    header {
+        background: #fff3f3;
+    }
+    header img {
+        width: auto;
+        height: 130px;
+    }
+    nav {
+        background: #0080ff;
+        padding: 20px;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav li a {
+        color: #dadada;
+    }
+    .btnContact {
+        display: none;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
