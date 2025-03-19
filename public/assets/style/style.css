@@ -31,7 +31,6 @@ nav {
     padding: 10px 10em;
     height: 70px;
     position: relative;
-    background-color: #ffecec;
 }
 
 nav .logo {
@@ -453,15 +452,18 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 600px) {
     /* Style adjustments for screens smaller than 600px */
+
+        /** Navigation section **/
     nav {
         padding: 10px 30px;  
     }
     
     nav ul {
-        padding: 5px 0;
+        display: none;
+        padding: 17px 0;
         position: absolute;
         top: 70px;
-        height: 130px;
+        height: 150px;
         right: 0;
         left: 0;
         flex-direction: column;
@@ -481,12 +483,12 @@ nav ul li a:hover {
     /***** btnContact ******/
     .btnContact a {
         display: none;
-        background: #ff0000;
         border: 1px solid #ff0000;
         border-radius: 5px;
         padding: 10px 23px;
-        color: #ffffff;
+        color: #ff0000;
     }
+
     /***** btnToogle ********/
     .btnToggle {
         height: 50px;
@@ -497,6 +499,58 @@ nav ul li a:hover {
         align-items: center;
         justify-content: center;
         margin-right: 0px;
+    }
+    /***** Banner ***/
+    #banner {
+        position: relative;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, rgba(1, 4, 23, 0.79), rgb(1, 1, 5)), url("/public/assets/img/engineering.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #banner .bannerNotice {
+        display: none;
+        padding: 80px 0px;
+        text-align: center;
+        color: #ff0000;
+        font-weight: bold;
+    }
+    
+    #banner h1 {
+        padding: 60px 0;
+        font-weight: bold;
+        font-size: 1.7em;
+        text-align: center;
+        color: #ffffff;
+    }
+        /** About Us Section **/
+    #about .aboutCarousel {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+        margin-bottom: 20px; 
+    }   
+    #about h2 {
+        padding: 15px 0;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #000000;
+    }
+    
+    .aboutCarousel-Items h3 {
+        padding: 15px 0;
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #000000;
+    }
+
+    .aboutCarousel-Items p {
+        margin-bottom: 10px;
+        text-align: justify;
     }
 }
 
