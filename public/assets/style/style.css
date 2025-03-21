@@ -31,6 +31,8 @@ nav {
     padding: 10px 10em;
     height: 70px;
     position: relative;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 nav .logo {
@@ -57,15 +59,13 @@ nav ul li a:hover {
     font-weight: bold;
     border-bottom:3px solid #ff0000;
     transition: 0.10s ease-in;
-
 }
 
 .btnContact a {
-    background: #ff0000;
     border: 1px solid #ff0000;
     border-radius: 5px;
     padding: 10px 23px;
-    color: #ffffff;
+    color: #ff0000;
 }
 
 /***** btnToogle ************/
@@ -154,14 +154,22 @@ nav ul li a:hover {
 }
 
 #about h2 {
-    padding: 35px 0;
+    padding: 25px 0;
     font-weight: bold;
     font-size: 1.5em;
     color: #000000;
 }
 
+#about h2::after {
+    content: '';
+    width: 5%;
+    height: 5px;
+    background: #ff0000;
+    display: block;
+}
+
 .aboutCarousel-Items h3 {
-    padding: 50px 0;
+    padding: 30px 0;
     font-weight: bold;
     font-size: 1.3em;
     color: #000000;
@@ -192,10 +200,26 @@ nav ul li a:hover {
         'itemServices_1 itemServices_3 itemServices_4'
         'itemServices_1 itemServices_3 itemServices_4';  
     grid-gap: 20px;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin-bottom: 30px;
     height: 50vh                                                                                              ;
 }
+
+#services .container h1 {
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+#services .container h1::after {
+    content: '';
+    width: 5%;
+    height: 5px;
+    background: #ff0000;
+    display: block;
+}
+
 .itemServices_1 {
     grid-area: itemServices_1;
     background: #ffffff;
