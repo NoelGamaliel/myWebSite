@@ -199,15 +199,12 @@ nav ul li a:hover {
 }
 
 #services .serviceContent {
-    display: grid;
-    grid-template-areas:  
-        'itemServices_1 itemServices_2 itemServices_2'
-        'itemServices_1 itemServices_3 itemServices_4'
-        'itemServices_1 itemServices_3 itemServices_4';  
+    display: grid; 
     grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px 0px;
     margin-bottom: 30px;
-    height: 50vh                                                                                              ;
+    height: 55vh                                                                                              ;
 }
 
 .serviceContent a {
@@ -233,25 +230,14 @@ nav ul li a:hover {
 }
 
   /**** Start Section services Items 1 ****/
-.itemServices_1 {
-    grid-area: itemServices_1;
-    background: #ffffff;
+.items {
+    transition: 0.3s linear;
 }
 
-.itemServices_1 h3 {
-    padding: 10px;
-    color: #000000;
-    font-size: 1.5rem;
-}
-
-.itemServices_1 p {
-    padding: 10px;
-    color: #000000;
-    font-size: 1.1rem;
-}
-
-.itemServices_1 i {
-    font-size: 1.1em;
+.items:hover {
+    background: linear-gradient(125deg, #c20000 40%, #ffcc00 175%);
+    color: #fff;
+    transform: translateY(10px);
 }
 
 hr {
@@ -260,66 +246,6 @@ hr {
 }
     /**** The end Section services Items 1 ****/
 
-.itemServices_2 {
-    grid-area: itemServices_2;
-    background: #ffffff;
-}
-
-.itemServices_2 h3 {
-    padding: 10px;
-    color: #000000;
-    font-size: 1.3rem;
-}
-
-.itemServices_2 p {
-    padding: 10px;
-    color: #000000;
-    font-size: 1.1rem;
-}
-
-.itemServices_2 i {
-    font-size: 1.3em;
-}
-
-.itemServices_3 {
-    grid-area: itemServices_3;
-    background: #ffffff;
-}
-
-.itemServices_3 h3 {
-    padding: 10px;
-    color: #000000;
-    font-size: 1.3rem;
-}
-
-.itemServices_3 p {
-    padding: 10px;
-    color: #000000;
-    font-size: 1.1rem;
-}
-.itemServices_3 i {
-    font-size: 1.3em;
-}
-
-.itemServices_4 {
-    grid-area: itemServices_4;
-    background: #ffffff;
-}
-
-.itemServices_4 h3 {
-    padding: 10px;
-    color: #000000;
-    font-size: 1.3rem;
-}
-
-.itemServices_4 p {
-    padding: 10px;
-    color: #000000;
-    font-size: 1.1rem;
-}
-.itemServices_4 i {
-    font-size: 1.3em;
-}
 /** controlForm *********/
 .controlForm {
     margin: auto;
