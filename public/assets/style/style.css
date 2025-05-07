@@ -490,7 +490,8 @@ hr {
     cursor: pointer;
     transition: all 1.5s ease-in-out;
 }
-/*** Section team ***/
+
+/*** Section Team ***/
 #team {
     position: relative;
     height: 65vh;
@@ -577,44 +578,35 @@ hr {
     background: #f3f4f6;
 }
 
-.footerContent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 20px;
+#footer .footerTitle {
+    margin-bottom: 10px;
 }
 
-.footerTitle h3 {
-    padding: 20px 0;
-    font-size: 1.3em;
-    color: #ff0000;
-}
-
-.footerLink {
+#footer .footerContent {
     display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
+    justify-content: space-between;
+    padding: 10px 0;
+    flex-wrap: wrap;
 }
 
-.footerLink a {
-    position: relative;
-    display: flex;
-    padding: 6px 6px;
-    background: #ff0000;
-    gap: 20px;
-    border-radius: 15%;
+#footer .footerContent .footerLeft {
+    color: #ff0808;
+} 
+
+#footer .footerContent .footerRight {
+    display: flex; 
 }
 
-.footerLink i {
-    font-size: 1.3em;
-    color: #ffffff;
-    display: block;
+#footer .footerContent .footerRight a {
+    margin-right: 10px;
+    color: #ff0808;
 }
 
-.footerCopy {
-    padding: 10px;
+#footer .footerContent .footerRight i {
+    font-size: 1.2rem;
 }
+
+
 /****** @media query **********/
 
 @media only screen and (max-width: 600px) {
@@ -729,9 +721,10 @@ hr {
     #services .serviceContent {
         display: flex;
         flex-direction: column;
-        row-gap: 20px; 
-        height: 105vh;                                                                              ;
+        row-gap: 20px;
+        height: 225vh;                                                                          ;
     }
+
     /**** Accompagment Projet ****/
     #accompProject {
         position: relative;
@@ -742,6 +735,26 @@ hr {
         background-image: linear-gradient(to bottom, #ff0000, #ff0808), url("/public/assets/img/accomplishment.jpg");
         background-size: cover;
         background-position: center;
+    }
+
+    /**** Teams Section *****/
+    #team .teamContent {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .image {
+        display: none;
+        width: 100%;
+        height: auto
+    }
+    
+    /**** Footer Section ****/
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
 
